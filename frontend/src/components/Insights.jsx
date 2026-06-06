@@ -40,7 +40,7 @@ const Insights = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/insights');
+        const response = await axios.get('https://fake-job-backend-pgcq.onrender.com/api/insights');
         setData(response.data);
       } catch (error) {
         console.error('Failed to fetch insights:', error);

@@ -48,7 +48,7 @@ const Dashboard = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8000/api/predict', {
+      const response = await axios.post('https://fake-job-backend-pgcq.onrender.com/api/predict', {
         title: activeTab === 'url' ? "Job from URL" : title,
         description: activeTab === 'url' ? `Job Posting URL: ${url}\n\nAnalyzing job content from the provided URL...` : description,
         url: activeTab === 'url' ? url : null
